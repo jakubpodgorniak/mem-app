@@ -2,7 +2,12 @@
 <div class="cards-container">
   <div class="card" [class.shown]="card.shown" [class.exposed]="card.exposed" *ngFor="let card of cards"
     (click)="show(card)">
-    {{ card.value }}
+    <ng-container *ngIf="card.shown; else hidden">
+      {{ card.value }}
+    </ng-container>
+    <ng-template #hidden>
+      M
+    </ng-template>
   </div>
 </div>
 <div class="description-container">
