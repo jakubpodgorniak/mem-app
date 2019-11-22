@@ -2,11 +2,12 @@ FROM node
 
 LABEL maintainer="podgorniakj@example.com"
 
-RUN npm install -g @angular/cli \
+RUN npm update \
+	&& npm install -g @angular/cli \
 	&& npm install --save-dev @angular-devkit/build-angular \
-	&& npm install @angular/compiler-cli \
-	&& npm update
-
+	&& npm install @angular/compiler \
+	&& npm install @angular/compiler-cli
+	
 COPY mem-app /home/mem-app
 
 WORKDIR "/home/mem-app"
