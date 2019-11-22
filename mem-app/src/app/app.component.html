@@ -1,0 +1,20 @@
+<h1>Memory test!</h1>
+<div class="cards-container">
+  <div class="card" [class.shown]="card.shown" [class.exposed]="card.exposed" *ngFor="let card of cards"
+    (click)="show(card)">
+    {{ card.value }}
+  </div>
+</div>
+<div class="description-container">
+  <ng-container *ngIf="correctAnswers < 10; else solved">
+    Correct answers: {{ correctAnswers }} <br/>
+    Time: {{ seconds }}s
+  </ng-container>
+  <ng-template #solved>
+    Task solved! <br/>
+    Time: {{ seconds }}s
+  </ng-template>
+</div>
+<div class="buttons-container">
+  <button (click)="reset()">Reset</button>
+</div>

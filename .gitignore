@@ -1,0 +1,46 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/mem-app/dist
+/mem-app/tmp
+/mem-app/out-tsc
+# Only exists if Bazel was run
+/mem-app/bazel-out
+
+# dependencies
+/mem-app/node_modules
+
+# profiling files
+/mem-app/chrome-profiler-events.json
+/mem-app/speed-measure-plugin.json
+
+# IDEs and editors
+/.idea
+/mem-app/.project
+/mem-app/.classpath
+/mem-app/.c9/
+*.launch
+/mem-app/.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+/mem-app/.vscode/*
+/mem-app/!.vscode/settings.json
+/mem-app/!.vscode/tasks.json
+/mem-app/!.vscode/launch.json
+/mem-app/!.vscode/extensions.json
+/mem-app/.history/*
+
+# misc
+/mem-app/.sass-cache
+/mem-app/connect.lock
+/mem-app/coverage
+/mem-app/libpeerconnection.log
+/mem-appnpm-debug.log
+/mem-appyarn-error.log
+/mem-apptestem.log
+/mem-app/typings
+
+# System Files
+/mem-app.DS_Store
+/mem-appThumbs.db

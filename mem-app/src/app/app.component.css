@@ -1,0 +1,54 @@
+.cards-container {
+    display: grid;
+    grid-template-areas: 
+    'c1 c2 c3 c4 c5'
+    'c6 c7 c8 c9 c10'
+    'c11 c12 c13 c14 c15'
+    'c16 c17 c18 c19 c20';
+    grid-gap: 30px;
+}
+
+.card {
+    text-align: center;
+    background-color: orange;
+    color: orange;
+    padding: 20px;
+    font-size: 60px;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #ecc277;
+    color: #ecc277;
+}
+
+.card.shown, .card.shown:hover {
+    background-color: orange;
+    cursor: auto;
+    color: black;
+}
+
+.card.shown.exposed, .card.shown.exposed:hover {
+    background-color: #ff6363;
+    cursor: auto;
+    color: black;
+}
+
+.description-container {
+    padding: 15px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.buttons-container button {
+    background-color: black;
+    border: 0px;
+    color: white;
+    font-size: 30px;
+    padding: 5px 20px 5px 20px;
+}
+
+.buttons-container button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
