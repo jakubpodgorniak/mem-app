@@ -6,7 +6,8 @@ RUN npm update \
 	&& npm install -g @angular/cli \
 	&& npm install --save-dev @angular-devkit/build-angular \
 	&& npm install @angular/compiler \
-	&& npm install @angular/compiler-cli
+	&& npm install @angular/compiler-cli \
+	&& npm link
 	
 COPY mem-app /home/mem-app
 
