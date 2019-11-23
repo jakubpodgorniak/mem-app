@@ -11,7 +11,7 @@ WORKDIR "/home/mem-app"
 
 RUN && npm install --save-dev @angular-devkit/build-angular \
 	&& npm install @angular/compiler \
-	&& npm install @angular/compiler-cli\
+	&& npm install @angular/compiler-cli \
 	&& npm link
 	
 EXPOSE 4200
