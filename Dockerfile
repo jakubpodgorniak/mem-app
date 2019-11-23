@@ -3,7 +3,7 @@ FROM node
 LABEL maintainer="podgorniakj@example.com"
 
 RUN npm update \
-	&& npm install -g @angular/cli \
+	&& npm install -g @angular/cli
 	
 COPY mem-app /home/mem-app
 
