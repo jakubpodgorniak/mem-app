@@ -9,7 +9,7 @@ COPY mem-app /home/mem-app
 
 WORKDIR "/home/mem-app"
 
-RUN && npm install --save-dev @angular-devkit/build-angular \
+RUN npm install --save-dev @angular-devkit/build-angular \
 	&& npm install @angular/compiler \
 	&& npm install @angular/compiler-cli \
 	&& npm link
